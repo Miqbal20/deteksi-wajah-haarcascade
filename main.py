@@ -1,6 +1,8 @@
 import deteksi_gambar
 import deteksi_webcam
 
+dir_asset = "C:/Users/miqba/PycharmProjects/DeteksiWajah/assets"
+
 
 def main():
     while True:
@@ -11,9 +13,9 @@ def main():
         print("================================")
         pilihan = input("Masukan metode deteksi wajah : ")
         if pilihan == "1":
-            deteksi_gambar.main()
+            deteksi_gambar.main(dir_asset)
         elif pilihan == "2":
-            deteksi_webcam.main()
+            deteksi_webcam.main(dir_asset)
         elif pilihan == "q" or pilihan == "Q":
             print("Keluar")
             exit()

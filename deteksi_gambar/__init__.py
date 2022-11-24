@@ -1,14 +1,14 @@
 import cv2
 
 
-def main():
+def main(dir_asset):
     # Sumber Gambar
-    img = "C:/Users/miqba/PycharmProjects/DeteksiWajah/assets/groubwajah.jpg"
+    img = f"{dir_asset}/groubwajah.jpg"
 
     # Metode yang bisa digunakan dalam deteksi wajah
-    haarcascade_frontalface = "C:/Users/miqba/PycharmProjects/DeteksiWajah/assets/haarcascade_frontalface_default.xml"
-    haarcascade_eye = "C:/Users/miqba/PycharmProjects/DeteksiWajah/assets/haarcascade_eye.xml"
-    haarcascade_smile = "C:/Users/miqba/PycharmProjects/DeteksiWajah/assets/haarcascade_smile.xml"
+    haarcascade_frontalface = f"{dir_asset}/haarcascade_frontalface_default.xml"
+    haarcascade_eye = f"{dir_asset}/haarcascade_eye.xml"
+    haarcascade_smile = f"{dir_asset}/haarcascade_smile.xml"
 
     # Inisialisasi gambar
     foto = cv2.imread(img)
