@@ -10,9 +10,10 @@ def main(dir_asset):
     haarcascade_eye = f"{dir_asset}/haarcascade_eye.xml"
     haarcascade_smile = f"{dir_asset}/haarcascade_smile.xml"
 
-    # Inisialisasi gambar
-    foto = cv2.imread(img)
     while True:
+        # Inisialisasi gambar
+        foto = cv2.imread(img)
+
         print("================================")
         print("Deteksi Melalui Gambar")
         print("1. Haarcascade Frontal Face")

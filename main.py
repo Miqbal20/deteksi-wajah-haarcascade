@@ -1,7 +1,7 @@
 import deteksi_gambar
 import deteksi_webcam
 
-dir_asset = "C:/Users/miqba/PycharmProjects/DeteksiWajah/assets"
+dir_asset = "C:/Users/miqba/PycharmProjects/deteksi-wajah-haarcascade/assets"
 
 
 def main():
