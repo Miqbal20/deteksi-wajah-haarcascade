@@ -14,7 +14,6 @@ def main(dir_asset):
     haarcascade_smile = f"{dir_asset}/haarcascade_smile.xml"
 
     while True:
-
         print("================================")
         print("Deteksi Melalui Gambar")
         print("1. Haarcascade Frontal Face")
@@ -40,12 +39,11 @@ def main(dir_asset):
 
         rgbfoto = cv2.cvtColor(foto, cv2.COLOR_BGR2RGB)
         abufoto = cv2.cvtColor(foto, cv2.COLOR_BGR2GRAY)
-
         while True:
             muka = faceDetektor.detectMultiScale(abufoto, scale, 1)
             for (x, y, w, h) in muka:
                 fotook = cv2.rectangle(rgbfoto, (x, y), (x + h, y + h), (0, 0, 255), 1)
-                result = cv2.cvtColor(rgbfoto, cv2.COLOR_BGR2RGB)
+                result = cv2.cvtColor(fotook, cv2.COLOR_BGR2RGB)
                 cv2.imshow('Foto Cek', result)
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
