@@ -1,6 +1,7 @@
 import deteksi_gambar
 import deteksi_webcam
 
+# Ganti Folder
 dir_asset = "C:/Users/miqba/PycharmProjects/deteksi-wajah-haarcascade/assets"
 
 
