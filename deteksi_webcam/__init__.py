@@ -23,7 +23,7 @@ def main(dir_asset):
             scale = 1.3
         elif pilihan == "3":
             faceDetektor = cv2.CascadeClassifier(haarcascade_smile)
-            scale = 8
+            scale = 3
         elif pilihan == "q" or pilihan == "Q":
             print("Keluar")
             break

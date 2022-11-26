@@ -5,14 +5,15 @@ def main(dir_asset):
     # Sumber Gambar
     img = f"{dir_asset}/groubwajah.jpg"
 
+    # Inisialisasi gambar
+    foto = cv2.imread(img)
+
     # Metode yang bisa digunakan dalam deteksi wajah
     haarcascade_frontalface = f"{dir_asset}/haarcascade_frontalface_default.xml"
     haarcascade_eye = f"{dir_asset}/haarcascade_eye.xml"
     haarcascade_smile = f"{dir_asset}/haarcascade_smile.xml"
 
     while True:
-        # Inisialisasi gambar
-        foto = cv2.imread(img)
 
         print("================================")
         print("Deteksi Melalui Gambar")
@@ -29,7 +30,7 @@ def main(dir_asset):
             scale = 1.3
         elif pilihan == "3":
             faceDetektor = cv2.CascadeClassifier(haarcascade_smile)
-            scale = 5
+            scale = 3
         elif pilihan == "q" or pilihan == "Q":
             print("Keluar")
             break
